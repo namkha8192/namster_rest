@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600,700');
+/*Import Raleway 400, 600 and 700 on line #1 (must be on first line)*/
+/* ----------------------------------------
+Base Styles
+------------------------------------------- */
+* {
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+}
+
+nav h1 {
+  text-align: center;
+}
+
+ul{
+  display: inline-block;
+}
+
+li{
+  display: inline-block;
+}
+
+header {
+  text-align: center;
+  text-transform: uppercase;
+  margin: auto;
+  background-image: url('../images/home1.jpg');
+  min-height: 100vh;
+  background-size: cover;
+  position: relative;
+}
+
+header nav {
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 3px 11px rgba(0, 0, 0, .1);
+  transition: all 300ms ease-out;
+}
+
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+header nav li {
+  display: inline-block;
+}
+
+header nav a {
+  display: inline-block;
+  margin: 1rem;
+  padding: .25rem 0;
+  text-decoration: none;
+  color: #888;
+  transition: all .3s ease-in-out;
+  font-weight: bold;
+}
+
+.white-text {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 span {
+  font-size: 100000000px;
+}
+
+h3 span {
+  font-size: 500px;
+}
+
+.brunch-link {
+  text-align: center;
+}
+
+.dinner-link {
+  text-align: center;
+}
+
+.drinks-link {
+  text-align: center;
+}
+
+.menucenter {
+  text-align: center;
+  display: block;
+  padding: 0 50px;
+  color: #000;
+}
+
+.brunch {
+  display: grid;
+  grid-template-columns: .5fr .5fr .5fr;
+}
+
+.dinner {
+  display: grid;
+  grid-template-columns: .5fr .5fr .5fr;
+}
+
+.drinks {
+  display: grid;
+  grid-template-columns: .25fr .25fr .25fr .25fr;
+}
+
+img {
+  max-width: 100%;
+}
+
+.carousel-wrapper {
+  width: 600px;
+  margin: 0 auto 30px;
+}
+
+.slick-next {
+  right: -40px;
+}
+
+.slick-prev {
+  left: -40px;
+}
+
+.map-grid {
+  display: grid;
+  grid-template-columns: .25fr .75fr;
+}
+
+.reservation-box {
+  background-color: #30BCED;
+  padding: 50px;
+  text-align: center;
+}
+
+button {
+  background-color: #FCEFEF;
+  color: #000;
+  padding: 10px;
+  border: none;
+  margin: auto;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(3 , 1fr);
+  background-color: #000000;
+  color: #FFF;
+  text-align: center;
+  text-decoration: none;
+}
+
+footer nav a {
+  color: #FFF;
+}
+
+.footernav {
+  text-decoration: none;
+  font-weight: bold;
+  color: #FFF;
+}
+
+.hours {
+  display: inline-block;
+  vertical-align: middle;
+  color: #FFF;
+  text-align: center;
+}
+
+.h1-location {
+  text-align: center;
+}
+
+.maptable {
+  padding: 50px 0px 50px 70px;
+}
+
+.mainmenu {
+  margin: 0 0 0 60px;
+}
+
+.hamburger {
+  display: none;
+}
+
+.scrolled {
+  background-color: white;
+  position: fixed;
+  top: 0px;
+  z-index: 20;
+}
+
+@media only screen and (max-width: 650px) {
+  .hamburger {
+    display: block;
+  }
+  .main-nav {
+    transform: translateX(-100%);
+    background-color: white;
+    position: fixed;
+  }
+
+  header nav {
+    text-align: left;
+  }
+
+  .active {
+    transform: translateX(0);
+
+  }
+}
+/* ----------------------------------------
+Add comments here for organization!!
+------------------------------------------- */
